@@ -1,66 +1,68 @@
+**English** · [Español](README.es.md)
+
 # STEP-BY-STEP LD
 
-Calculadora científica estilo Casio ClassWiz con resolución paso a paso y escáner de cuaderno.
+Casio ClassWiz-style scientific calculator with step-by-step solving and a notebook scanner.
 
 [![Release](https://img.shields.io/github/v/release/danicaju/stepbystepld-releases?style=flat-square&label=Release)](https://github.com/danicaju/stepbystepld-releases/releases/latest)
-![Plataformas](https://img.shields.io/badge/Plataformas-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-informational?style=flat-square)
-[![Web App](https://img.shields.io/badge/Web%20App-Abrir-2ea44f?style=flat-square)](https://stepbystepld.danicaju.workers.dev/app/)
+![Platforms](https://img.shields.io/badge/Platforms-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-informational?style=flat-square)
+[![Web App](https://img.shields.io/badge/Web%20App-Open-2ea44f?style=flat-square)](https://stepbystepld.danicaju.workers.dev/app/)
 
 <p align="center">
-  <img src="assets/calculator.png" alt="Pantalla principal de la calculadora STEP-BY-STEP LD" width="220" />
+  <img src="assets/calculator.png" alt="Main screen of the STEP-BY-STEP LD calculator" width="220" />
   &nbsp;&nbsp;
-  <img src="assets/step-by-step.png" alt="Desglose paso a paso de una expresión matemática" width="220" />
+  <img src="assets/step-by-step.png" alt="Step-by-step breakdown of a math expression" width="220" />
   &nbsp;&nbsp;
-  <img src="assets/scanner.png" alt="Escáner de ejercicios desde cámara o galería" width="220" />
+  <img src="assets/scanner.png" alt="Exercise scanner from camera or gallery" width="220" />
 </p>
 
-## Descargas y acceso
+## Downloads and access
 
-| Plataforma | Formato / Acceso | Enlace |
+| Platform | Format / Access | Link |
 | --- | --- | --- |
-| Windows (x64) | Archivo `.zip` | [stepbystepld-windows-x64.zip](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-windows-x64.zip) |
-| macOS (Universal) | Archivo `.zip` | [stepbystepld-macos.zip](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-macos.zip) |
-| Linux (x64) | Archivo `.tar.gz` | [stepbystepld-linux-x64.tar.gz](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-linux-x64.tar.gz) |
-| Web (sin instalación) | Navegador | [Abrir aplicación web](https://stepbystepld.danicaju.workers.dev/app/) |
-| Página principal | Sitio oficial | [stepbystepld.danicaju.workers.dev](https://stepbystepld.danicaju.workers.dev/) |
-| Android | Google Play | En fase de prueba cerrada |
+| Windows (x64) | `.zip` archive | [stepbystepld-windows-x64.zip](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-windows-x64.zip) |
+| macOS (Universal) | `.zip` archive | [stepbystepld-macos.zip](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-macos.zip) |
+| Linux (x64) | `.tar.gz` archive | [stepbystepld-linux-x64.tar.gz](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/stepbystepld-linux-x64.tar.gz) |
+| Web (no install) | Browser | [Open web app](https://stepbystepld.danicaju.workers.dev/app/) |
+| Website | Official site | [stepbystepld.danicaju.workers.dev](https://stepbystepld.danicaju.workers.dev/) |
+| Android | Google Play | In closed testing |
 
-## Notas de primer arranque
+## First-run notes
 
 <details>
 <summary>Windows (SmartScreen)</summary>
 
-Al abrir el ejecutable tras descomprimir el `.zip`, Windows Defender SmartScreen puede mostrar una advertencia porque el binario no tiene firma comercial. Pulsa en "Más información" y después en "Ejecutar de todas formas".
+When opening the executable after extracting the `.zip` archive, Windows Defender SmartScreen may show a warning because the binary has no commercial signature. Click "More info" and then "Run anyway".
 
 </details>
 
 <details>
-<summary>macOS (Gatekeeper y cuarentena)</summary>
+<summary>macOS (Gatekeeper and quarantine)</summary>
 
-Tras descomprimir `stepbystepld-macos.zip` y mover la aplicación a `/Applications`, macOS puede bloquear el arranque por el atributo de cuarentena. Puedes autorizarla haciendo clic derecho sobre la app y pulsando "Abrir", desde Ajustes del Sistema > Privacidad y seguridad, o retirando el atributo desde Terminal sobre el paquete `.app` extraído:
+After extracting `stepbystepld-macos.zip` and moving the app to `/Applications`, macOS may block launch due to the quarantine attribute. You can allow it by right-clicking the app and choosing "Open", from System Settings > Privacy & Security, or by clearing the attribute in Terminal on the extracted `.app` bundle:
 
 ```bash
-xattr -cr /Applications/<nombre-de-la-app>.app
+xattr -cr /Applications/<app-name>.app
 ```
 
 </details>
 
 <details>
-<summary>Linux (descompresión y permisos)</summary>
+<summary>Linux (extraction and permissions)</summary>
 
-Extrae el paquete en una carpeta local:
+Extract the package into a local folder:
 
 ```bash
 tar -xzf stepbystepld-linux-x64.tar.gz
 ```
 
-Si el sistema no conserva los permisos de ejecución tras descomprimir, añádelos con `chmod +x` sobre el binario principal antes de ejecutarlo.
+If your system does not preserve execute permissions after extraction, run `chmod +x` on the main binary before launching it.
 
 </details>
 
-## Verificación de integridad
+## Integrity verification
 
-Cada release incluye el archivo [SHA256SUMS.txt](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/SHA256SUMS.txt) con los resúmenes SHA-256 de los tres paquetes de escritorio.
+Each release includes [SHA256SUMS.txt](https://github.com/danicaju/stepbystepld-releases/releases/latest/download/SHA256SUMS.txt) with the SHA-256 checksums for all three desktop packages.
 
 Windows (PowerShell):
 
@@ -74,16 +76,16 @@ macOS:
 shasum -a 256 stepbystepld-macos.zip
 ```
 
-Linux (con `SHA256SUMS.txt` en la misma carpeta que el archivo descargado):
+Linux (with `SHA256SUMS.txt` in the same folder as the downloaded file):
 
 ```bash
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
 
-## Actualizaciones, privacidad y alcance
+## Updates, privacy, and scope
 
-La aplicación de escritorio consulta la API pública de GitHub Releases para comprobar si existe una versión más reciente. Si hay una actualización disponible, muestra un aviso con acceso a la descarga.
+The desktop app checks the public GitHub Releases API for newer versions. When an update is available, it shows a prompt with a download link.
 
-La política de privacidad del servicio está publicada en [stepbystepld-legal.pages.dev/privacy.html](https://stepbystepld-legal.pages.dev/privacy.html).
+The service privacy policy is available at [stepbystepld-legal.pages.dev/privacy.html](https://stepbystepld-legal.pages.dev/privacy.html).
 
-Este repositorio público aloja únicamente los paquetes oficiales publicados, sus sumas de verificación y el registro de incidencias relacionadas con la distribución. El código fuente de la aplicación se mantiene en un repositorio privado.
+This public repository holds only the official release packages, their checksums, and distribution-related issue reports. The application source code is kept in a private repository.
