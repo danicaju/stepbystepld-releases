@@ -6,6 +6,14 @@ Calculadora científica estilo Casio ClassWiz con resolución paso a paso y esc�
 ![Plataformas](https://img.shields.io/badge/Plataformas-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-informational?style=flat-square)
 [![Web App](https://img.shields.io/badge/Web%20App-Abrir-2ea44f?style=flat-square)](https://stepbystepld.danicaju.workers.dev/app/)
 
+<p align="center">
+  <img src="assets/calculator.png" alt="Pantalla principal de la calculadora STEP-BY-STEP LD" width="220" />
+  &nbsp;&nbsp;
+  <img src="assets/step-by-step.png" alt="Desglose paso a paso de una expresión matemática" width="220" />
+  &nbsp;&nbsp;
+  <img src="assets/scanner.png" alt="Escáner de ejercicios desde cámara o galería" width="220" />
+</p>
+
 ## Descargas y acceso
 
 | Plataforma | Formato / Acceso | Enlace |
